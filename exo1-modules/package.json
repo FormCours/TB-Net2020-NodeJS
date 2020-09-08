@@ -1,0 +1,12 @@
+{
+  "name": "exo1-modules",
+  "version": "1.0.0",
+  "description": "Correction du 1er exo NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aurélien",
+  "license": "ISC"
+}
