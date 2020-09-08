@@ -40,7 +40,7 @@ reader.question('Votre choix : ', (response) => {
                     const monthBirthdate = parseInt(monthInput);
 
                     if(!isNaN(dateBirthdate) && !isNaN(monthBirthdate)) {
-                        const nbBirthdate = calcDay.fromBirthdate(2, 6);
+                        const nbBirthdate = calcDay.fromBirthdate(monthBirthdate, dateBirthdate);
             
                         if(nbBirthdate > 0)  {
                             console.log(`Vous prenez une année dans ${nbBirthdate}`);
