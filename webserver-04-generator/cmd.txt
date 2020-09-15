@@ -1,0 +1,2 @@
+Commande executé :
+npx express-generator --git --view=ejs
