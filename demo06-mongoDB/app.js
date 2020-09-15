@@ -45,5 +45,35 @@ const addPerson = (firstname, lastname, age) => {
     });
 }
 
-addPerson('Zaza', 'Vanderquack', 13);
-addPerson('Riri', 'Duck', 14);
+// addPerson('Zaza', 'Vanderquack', 13);
+// addPerson('Riri', 'Duck', 14);
+// addPerson('Donald', 'Duck', 30);
+// addPerson('Daisy', 'Duck', 29);
+// addPerson('Archiblad', 'Gripsou', 70);
+// addPerson('Balthazar', 'Picsou', 67);
+
+
+// -- Recuperation de tout les ducks
+const getAllDuck = () => {
+    return new Promise((resolve, reject) => {
+            const Person = mongoose.model('Person', personSchema);
+        
+            Person.findOne({lastname: 'Duck'}, (err, data) => {
+                if(err) {
+                    reject('Erreur lors de la recuperation');
+                }
+                else {
+                    resolve(data);
+                }
+            })
+    });
+}
+
+async function demoAsync() {
+    console.log('Avant');
+    const ducks = await getAllDuck();
+    console.log(ducks);
+    console.log('Après');
+};
+
+demoAsync();
