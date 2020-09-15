@@ -1,0 +1,12 @@
+{
+  "name": "exo2-fichiers",
+  "version": "1.0.0",
+  "description": "Exo utilisation de Json",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aurélien",
+  "license": "ISC"
+}
