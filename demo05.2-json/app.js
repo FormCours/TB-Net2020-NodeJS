@@ -5,6 +5,7 @@ const getDataFromJson = (filename) => {
         readFile(filename, (error, data) => {
             if(error) {
                 reject(error);
+                return;
             }
             try {
                 const json = JSON.parse(data);
